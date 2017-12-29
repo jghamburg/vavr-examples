@@ -1,0 +1,123 @@
+buildscript {
+  repositories {
+    jcenter()
+  }
+
+  dependencies {
+    classpath 'uk.co.cacoethes:lazybones-gradle:1.2.3'
+    classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.2'
+    classpath 'com.github.jruby-gradle:jruby-gradle-plugin:0.1.5'
+    classpath 'org.ysb33r.gradle:vfs-gradle-plugin:1.0-beta1'
+    classpath 'commons-httpclient:commons-httpclient:3.1'
+    classpath 'com.bluepapa32:gradle-watch-plugin:0.1.4'
+    classpath 'org.ajoberstar:gradle-git:1.1.0'
+  }
+}
+
+apply plugin: "java"
+apply plugin: "groovy"
+apply plugin: "application"
+
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+apply plugin: 'com.github.jruby-gradle.base'
+apply plugin: 'org.ysb33r.vfs'
+apply plugin: 'org.asciidoctor.convert'
+apply plugin: 'com.bluepapa32.watch'
+apply plugin: 'uk.co.cacoethes.lazybones-templates'
+
+group = 'net.gellien.vavr'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+version = '1.0.0'
+
+ext {
+  revealjs_version = '3.0.0'
+  revealjsDir = new File(buildDir, 'reveal.js')
+  adocRevealjsDir = new File(buildDir, 'asciidoctor-reveal.js')
+}
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  	gems 'rubygems:asciidoctor-diagram:1.3.0.preview.3'
+  	gems 'rubygems:slim:2.1.0'
+  	gems 'rubygems:thread_safe:0.3.4'
+
+    compile 'org.codehaus.groovy:groovy-all:2.4.8'
+    compile 'org.slf4j:slf4j-simple:1.7.25'
+
+    compileOnly 'org.projectlombok:lombok:1.16.18'
+
+  	compile 'io.vavr:vavr:0.9.1'
+	
+	testCompile 'io.cucumber:cucumber-core:2.0.1'
+	testCompile 'io.cucumber:cucumber-java:2.0.1'
+	testCompile 'io.cucumber:cucumber-junit:2.0.1'
+	testCompile 'io.cucumber:cucumber-jvm-deps:1.0.6'
+	testCompile 'info.cukes:cucumber-picocontainer:1.2.5'
+	testCompile 'net.masterthought:cucumber-reporting:3.11.0'
+	testCompile 'io.cucumber:gherkin:4.1.3'
+
+	testCompile 'junit:junit:4.12'
+	testCompile 'org.hamcrest:hamcrest-core:1,3'
+	// mandatory dependencies for using Spock
+	testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
+	// optional dependencies for using Spock
+	testRuntime 'cglib:cglib-nodep:3.1'          // allows mocking of classes (in addition to interfaces)
+	testRuntime 'org.objenesis:objenesis:2.1'    // allows mocking of classes without default constructor (together with CGLIB)“
+
+}
+
+task download {
+    doLast {
+        mkdir buildDir
+        vfs {
+            cp "zip:https://github.com/hakimel/reveal.js/archive/" + revealjs_version + ".zip!reveal.js-" + revealjs_version, revealjsDir, recursive: true, overwrite: true
+        }
+
+        if (!adocRevealjsDir.exists()) {
+            Grgit.clone(dir: adocRevealjsDir, uri: 'https://github.com/asciidoctor/asciidoctor-reveal.js')
+        }
+    }
+}
+
+asciidoctor {
+  if( !buildDir.exists() ) {
+    dependsOn jrubyPrepareGems
+    dependsOn download
+  }
+
+  gemPath = jrubyPrepareGems.outputDir
+  requires = ['asciidoctor-diagram']
+  sources {
+    include 'slides.adoc'
+  }
+  resources {
+    from(sourceDir) {
+      include 'images/**'
+      include 'styles/**'
+      include 'snippets/**'
+    }
+    from(buildDir) {
+      include 'reveal.js/**'
+      include 'asciidoctor-reveal.js/**'
+    }
+  }
+
+  attributes 'sourcedir': project.sourceSets.main.java.srcDirs[0],
+              imagesoutdir: 'images',
+              revealjs_theme: 'black'
+
+  options template_dirs: [new File(adocRevealjsDir, 'templates/slim').absolutePath]
+}
+
+watch {
+  asciidoc {
+    files fileTree(dir: 'src/docs')
+    tasks 'asciidoctor'
+  }
+}

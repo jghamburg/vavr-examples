@@ -1,0 +1,4 @@
+= VAVR -- The headstart to Functional Programing
+Jörg Gellien joerg.gellien@otto.de
+:imagesdir: images
+:sourcedir: snippets
