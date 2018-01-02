@@ -1,936 +1,541 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <option name="DEFAULT_COMPILER" value="Eclipse" />
+    <option name="DEFAULT_COMPILER" value="Eclipse"/>
     <resourceExtensions>
-      <entry name=".+\.(properties|xml|html|dtd|tld)" />
-      <entry name=".+\.(gif|png|jpeg|jpg)" />
+      <entry name=".+\.(properties|xml|html|dtd|tld)"/>
+      <entry name=".+\.(gif|png|jpeg|jpg)"/>
     </resourceExtensions>
     <wildcardResourcePatterns>
-      <entry name="!?*.class" />
-      <entry name="!?*.scala" />
-      <entry name="!?*.java" />
-      <entry name="!?*.groovy" />
+      <entry name="!?*.class"/>
+      <entry name="!?*.scala"/>
+      <entry name="!?*.java"/>
+      <entry name="!?*.groovy"/>
     </wildcardResourcePatterns>
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true" />
+      <profile default="true" name="Default" enabled="true"/>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="vavr-example_main" target="1.8" />
-      <module name="vavr-example_test" target="1.8" />
+      <module name="vavr-example_main" target="1.8"/>
+      <module name="vavr-example_test" target="1.8"/>
     </bytecodeTargetLevel>
   </component>
-  <component name="CopyrightManager" default="" />
+  <component name="CopyrightManager" default=""/>
   <component name="DependencyValidationManager">
-    <option name="SKIP_IMPORT_STATEMENTS" value="false" />
+    <option name="SKIP_IMPORT_STATEMENTS" value="false"/>
   </component>
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false"/>
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/vavr-examples" />
-        <option name="gradleJvm" value="JavaSE-1.8" />
-        <option name="useAutoImport" value="true" />
+        <option name="distributionType" value="DEFAULT_WRAPPED"/>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/vavr-examples"/>
+        <option name="gradleJvm" value="JavaSE-1.8"/>
+        <option name="useAutoImport" value="true"/>
       </GradleProjectSettings>
     </option>
   </component>
   <component name="GradleUISettings">
-    <setting name="root" />
+    <setting name="root"/>
   </component>
   <component name="GradleUISettings2">
-    <setting name="root" />
+    <setting name="root"/>
   </component>
-  <component name="IdProvider" IDEtalkID="11DA1DB66DD62DDA1ED602B7079FE97C" />
+  <component name="IdProvider" IDEtalkID="11DA1DB66DD62DDA1ED602B7079FE97C"/>
   <component name="InspectionProjectProfileManager">
     <profile version="1.0">
-      <option name="myName" value="Project Default" />
+      <option name="myName" value="Project Default"/>
     </profile>
-    <version value="1.0" />
+    <version value="1.0"/>
   </component>
   <component name="JavadocGenerationManager">
-    <option name="OUTPUT_DIRECTORY" />
-    <option name="OPTION_SCOPE" value="protected" />
-    <option name="OPTION_HIERARCHY" value="true" />
-    <option name="OPTION_NAVIGATOR" value="true" />
-    <option name="OPTION_INDEX" value="true" />
-    <option name="OPTION_SEPARATE_INDEX" value="true" />
-    <option name="OPTION_DOCUMENT_TAG_USE" value="false" />
-    <option name="OPTION_DOCUMENT_TAG_AUTHOR" value="false" />
-    <option name="OPTION_DOCUMENT_TAG_VERSION" value="false" />
-    <option name="OPTION_DOCUMENT_TAG_DEPRECATED" value="true" />
-    <option name="OPTION_DEPRECATED_LIST" value="true" />
-    <option name="OTHER_OPTIONS" value="" />
-    <option name="HEAP_SIZE" />
-    <option name="LOCALE" />
-    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY"/>
+    <option name="OPTION_SCOPE" value="protected"/>
+    <option name="OPTION_HIERARCHY" value="true"/>
+    <option name="OPTION_NAVIGATOR" value="true"/>
+    <option name="OPTION_INDEX" value="true"/>
+    <option name="OPTION_SEPARATE_INDEX" value="true"/>
+    <option name="OPTION_DOCUMENT_TAG_USE" value="false"/>
+    <option name="OPTION_DOCUMENT_TAG_AUTHOR" value="false"/>
+    <option name="OPTION_DOCUMENT_TAG_VERSION" value="false"/>
+    <option name="OPTION_DOCUMENT_TAG_DEPRECATED" value="true"/>
+    <option name="OPTION_DEPRECATED_LIST" value="true"/>
+    <option name="OTHER_OPTIONS" value=""/>
+    <option name="HEAP_SIZE"/>
+    <option name="LOCALE"/>
+    <option name="OPEN_IN_BROWSER" value="true"/>
   </component>
   <component name="Palette2">
     <group name="Swing">
       <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
-        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
+        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1"/>
       </item>
       <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
-        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
+        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2"/>
       </item>
       <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.png" removable="false" auto-create-binding="false" can-attach-label="false">
-        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3"/>
       </item>
       <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.png" removable="false" auto-create-binding="false" can-attach-label="true">
-        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
+        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3"/>
       </item>
       <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.png" removable="false" auto-create-binding="true" can-attach-label="false">
-        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1"/>
         <initial-values>
-          <property name="text" value="Button" />
+          <property name="text" value="Button"/>
         </initial-values>
       </item>
       <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.png" removable="false" auto-create-binding="true" can-attach-label="false">
-        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0"/>
         <initial-values>
-          <property name="text" value="RadioButton" />
+          <property name="text" value="RadioButton"/>
         </initial-values>
       </item>
       <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.png" removable="false" auto-create-binding="true" can-attach-label="false">
-        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0"/>
         <initial-values>
-          <property name="text" value="CheckBox" />
+          <property name="text" value="CheckBox"/>
         </initial-values>
       </item>
       <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.png" removable="false" auto-create-binding="false" can-attach-label="false">
-        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
+        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0"/>
         <initial-values>
-          <property name="text" value="Label" />
+          <property name="text" value="Label"/>
         </initial-values>
       </item>
       <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.png" removable="false" auto-create-binding="true" can-attach-label="true">
         <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
-          <preferred-size width="150" height="-1" />
+          <preferred-size width="150" height="-1"/>
         </default-constraints>
       </item>
       <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.png" removable="false" auto-create-binding="true" can-attach-label="true">
         <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
-          <preferred-size width="150" height="-1" />
+          <preferred-size width="150" height="-1"/>
         </default-constraints>
       </item>
       <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.png" removable="false" auto-create-binding="true" can-attach-label="true">
         <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
-          <preferred-size width="150" height="-1" />
+          <preferred-size width="150" height="-1"/>
         </default-constraints>
       </item>
       <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.png" removable="false" auto-create-binding="true" can-attach-label="true">
         <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
-          <preferred-size width="150" height="50" />
+          <preferred-size width="150" height="50"/>
         </default-constraints>
       </item>
       <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
         <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
-          <preferred-size width="150" height="50" />
+          <preferred-size width="150" height="50"/>
         </default-constraints>
       </item>
       <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
         <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
-          <preferred-size width="150" height="50" />
+          <preferred-size width="150" height="50"/>
         </default-constraints>
       </item>
       <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.png" removable="false" auto-create-binding="true" can-attach-label="true">
-        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
+        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1"/>
       </item>
       <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.png" removable="false" auto-create-binding="true" can-attach-label="false">
         <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
-          <preferred-size width="150" height="50" />
+          <preferred-size width="150" height="50"/>
         </default-constraints>
       </item>
       <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.png" removable="false" auto-create-binding="true" can-attach-label="false">
         <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
-          <preferred-size width="150" height="50" />
+          <preferred-size width="150" height="50"/>
         </default-constraints>
       </item>
       <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.png" removable="false" auto-create-binding="true" can-attach-label="false">
         <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
-          <preferred-size width="150" height="50" />
+          <preferred-size width="150" height="50"/>
         </default-constraints>
       </item>
       <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.png" removable="false" auto-create-binding="true" can-attach-label="false">
         <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
-          <preferred-size width="200" height="200" />
+          <preferred-size width="200" height="200"/>
         </default-constraints>
       </item>
       <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.png" removable="false" auto-create-binding="false" can-attach-label="false">
         <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
-          <preferred-size width="200" height="200" />
+          <preferred-size width="200" height="200"/>
         </default-constraints>
       </item>
       <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.png" removable="false" auto-create-binding="true" can-attach-label="true">
-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1"/>
       </item>
       <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.png" removable="false" auto-create-binding="true" can-attach-label="false">
-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1"/>
       </item>
       <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.png" removable="false" auto-create-binding="false" can-attach-label="false">
-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3"/>
       </item>
       <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1"/>
       </item>
       <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.png" removable="false" auto-create-binding="false" can-attach-label="false">
         <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
-          <preferred-size width="-1" height="20" />
+          <preferred-size width="-1" height="20"/>
         </default-constraints>
       </item>
       <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.png" removable="false" auto-create-binding="false" can-attach-label="false">
-        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
+        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1"/>
       </item>
       <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
-        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
+        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2"/>
       </item>
     </group>
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vavr-examples.iml" filepath="$PROJECT_DIR$/.idea/modules/vavr-examples.iml" group="vavr-example" />
+      <module filepath="$PROJECT_DIR$/.idea/modules/vavr-examples.iml" fileurl="file://$PROJECT_DIR$/.idea/modules/vavr-examples.iml"/>
+      <module filepath="$PROJECT_DIR$/vavr-example.iml" fileurl="file://$PROJECT_DIR$/vavr-example.iml"/>
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="JavaSE-1.8" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/build" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" assert-keyword="true" assert-jdk-15="true">
+    <output url="file://$PROJECT_DIR$/build"/>
   </component>
   <component name="SvnBranchConfigurationManager">
-    <option name="mySupportsUserInfoFilter" value="true" />
+    <option name="mySupportsUserInfoFilter" value="true"/>
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git"/>
   </component>
   <component name="issues">
     <option name="index">
       <map>
         <entry key="/Dummy.txt">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$USER_HOME$/.gradle/gradle.properties">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$APPLICATION_CONFIG_DIR$/consoles/db/0bedd93d-1fd7-4608-8c38-a78b0fc0375a/console.sql">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/DIVA/CucumberUITests/src/main/resources/selenium.properties">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/DIVA/DIVA/.gitignore">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/DIVA/DIVA/.gradle/gradle.properties">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/DIVA/DIVA/README.MD">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/DIVA/DIVA/build.gradle">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/DIVA/DIVA/docker/service/run.sh">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/DIVA/DIVA/gradle/wrapper/gradle-wrapper.properties">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/DIVA/DIVA/payara-server0.log">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/DIVA/DIVA/src/main/java/de/otto/wsi/common/web/presenter/login/LoginPresenter.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/DIVA/DIVA/src/main/resources/i18n/diva-messages_de.properties">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/DIVA/DIVA/src/test/groovy/de/otto/wsi/common/component/util/CommonServiceUtilTest.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/DIVA/DIVA/src/test/java/de/otto/wsi/common/DivaTest.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/DIVA/DIVA/src/test/java/de/otto/wsi/common/component/util/CommonServiceUtilTest.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/DIVA/DIVA/src/test/java/de/otto/wsi/common/component/util/print/ShipmentOrderPrintELLATest.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/OBC/auth/Jenkinsfile">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/OBC/common/Jenkinsfile">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/OBC/dashboard/Jenkinsfile">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/OBC/footer/Jenkinsfile">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/OBC/header/Jenkinsfile">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/OBC/header/README.md">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/OBC/header/pom.xml">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/OBC/obc-brandshopupdater-frontend/package.json">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/OBC/obc-brandshopupdater/build.gradle">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/OBC/obc-brandshopupdater/gradle/wrapper/gradle-wrapper.properties">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/infrastructure/sonarqubePostgres/Dockerfile">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/infrastructure/sonarqubePostgres/docker-compose.yml">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/obc-jenkinsci/.env">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/obc-jenkinsci/.gitignore">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/obc-jenkinsci/Dockerfile">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/obc-jenkinsci/basic-security.groovy">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/obc-jenkinsci/docker-compose.yml">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/obc-jenkinsci/jenkins.install.UpgradeWizard.state">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../DIRSHIP/startDiva.sh">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/build.gradle">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/groovy/Vavr-example.groovy">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/net/gellien/vavr/StockPrice.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/net/gellien/vavr/StockPrices.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/net/gellien/vavr/StockPricesFutures.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/net/gellien/vavr/StockPricesParallelStream.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/net/gellien/vavr/StockPricesStream.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/net/gellien/vavr/StockPricesVavrStream.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/net/gellien/vavr/UsingThread.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/net/gellien/vavr/UsingThreadLambda.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/net/gellien/vavr/YahooFinance.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/net/gellien/vavr/pragpub1701/StockPricesParallelStream.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/net/gellien/vavr/pragpub1701/StockPricesStream.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/net/gellien/vavr/pragpub1701/StockPricesVavrStream.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/net/gellien/vavr/pragpub1701/YahooFinance.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/net/gellien/vavr/pragpub1702/Person.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/net/gellien/vavr/pragpub1702/PrintNamesOfAdults.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/net/gellien/vavr/pragpub1702/PrintNamesOfAdultsJava8.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/net/gellien/vavr/pragpub1702/PrintNamesOfAdultsVavr.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/net/gellien/vavr/pragpub1703/FindPerson.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/net/gellien/vavr/pragpub1703/FindPersonVavr.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/net/gellien/vavr/pragpub1703/Person.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/net/gellien/vavr/pragpub1704/StringUtils.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/test/groovy/net/gellien/vavr/ListSpecification.groovy">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../waldemord/src/main/java/com/beastbattle/waldemord.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="/a.dummy">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
         <entry key="/fragment.java">
           <value>
-            <set />
+            <set/>
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="libraryTable">
-    <library name="Gradle: cglib:cglib-nodep:3.1">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cglib/cglib-nodep/3.1/aa83efbd1aedc4f26bdf00e7ea78191483f2c9b3/cglib-nodep-3.1.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cglib/cglib-nodep/3.1/e651cbd93cb1c2155afdea6675c50e567f7ce91e/cglib-nodep-3.1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.8.0">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.0/45b426f7796b741035581a176744d91090e2e6fb/jackson-annotations-2.8.0.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.0/29a1a95363d497e856c0a7d682e4f7973e334068/jackson-annotations-2.8.0-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: com.fasterxml.jackson.core:jackson-core:2.8.6">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.6/2ef7b1cc34de149600f5e75bc2d5bf40de894e60/jackson-core-2.8.6.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.6/36af810d532d0b79feb391519efddce81f0afa7/jackson-core-2.8.6-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.8.6">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.6/c43de61f74ecc61322ef8f402837ba65b0aa2bf4/jackson-databind-2.8.6.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.6/b4fa0bfb592813e6753f25719501cf6f803a2bd1/jackson-databind-2.8.6-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: com.google.guava:guava:20.0">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/20.0/89507701249388e1ed5ddcf8c41f4ce1be7831ef/guava-20.0.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/20.0/9c8493c7991464839b612d7547d6c263adf08f75/guava-20.0-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: com.googlecode.owasp-java-html-sanitizer:owasp-java-html-sanitizer:20170515.1">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.owasp-java-html-sanitizer/owasp-java-html-sanitizer/20170515.1/2ac64ee731e71b8ce411b7ff306c35eae672f6dd/owasp-java-html-sanitizer-20170515.1.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.owasp-java-html-sanitizer/owasp-java-html-sanitizer/20170515.1/bea6bf11a27c5738329e2d870cad6d6d6ddd7ad6/owasp-java-html-sanitizer-20170515.1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: commons-collections:commons-collections:3.2.1">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.1/761ea405b9b37ced573d2df0d1e3a4e0f9edc668/commons-collections-3.2.1.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.1/fa095ef874374e5b2a11f8b06c26a5d68c7cb3a4/commons-collections-3.2.1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: commons-io:commons-io:2.5">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.5/2852e6e05fbb95076fc091f6d1780f1f8fe35e0f/commons-io-2.5.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.5/caf033a4a7c37b4a8ff3ea084cba591539b0b69/commons-io-2.5-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: commons-lang:commons-lang:2.4">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.4/16313e02a793435009f1e458fa4af5d879f6fb11/commons-lang-2.4.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.4/2b8c4b3035e45520ef42033e823c7d33e4b4402c/commons-lang-2.4-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: info.cukes:cucumber-core:1.2.5">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-core/1.2.5/7255a9d8e0c3b0f9e3cd80503c91c2b088b3d9b5/cucumber-core-1.2.5.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-core/1.2.5/c4fee6de8487b287994b917624d3ad1ede52a4ca/cucumber-core-1.2.5-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: info.cukes:cucumber-html:0.2.6">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-html/0.2.6/e2577a2a51fdb821e877433ae55ac9211ffcb16a/cucumber-html-0.2.6.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-html/0.2.6/c2c2c3c6917ee2943422bea814c4762e54520408/cucumber-html-0.2.6-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: info.cukes:cucumber-java:1.2.5">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-java/1.2.5/2197dfa9cd7899ddce136a356994ac21f438f80/cucumber-java-1.2.5.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-java/1.2.5/fb3f585b68770a423933f0d8b9d8cac800d4157f/cucumber-java-1.2.5-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: info.cukes:cucumber-jvm-deps:1.0.5">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-jvm-deps/1.0.5/69ed0efe4b81f05da3c0bdc7281cbdc43f5ceb26/cucumber-jvm-deps-1.0.5.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-jvm-deps/1.0.5/e8341c9fedbbc37a403cae642be85dcc616b09f3/cucumber-jvm-deps-1.0.5-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: info.cukes:cucumber-picocontainer:1.2.5">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-picocontainer/1.2.5/1b1eab642518986203e9af7196c7ee1af43918ba/cucumber-picocontainer-1.2.5.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-picocontainer/1.2.5/fcad8b89548fd9273b025f70518e34d7036aa908/cucumber-picocontainer-1.2.5-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: info.cukes:gherkin:2.12.2">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/gherkin/2.12.2/17138631fa20fd0e44a13e50d6b7be59cee1a94/gherkin-2.12.2.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/gherkin/2.12.2/fc117e217134f99f3b67b7ac10ca277dab596adf/gherkin-2.12.2-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: io.cucumber:cucumber-core:2.0.1">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/cucumber-core/2.0.1/17cc1ae97a43537e117d3536643b1d3d398c6011/cucumber-core-2.0.1.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/cucumber-core/2.0.1/a8ad9e70b18972eaf2a4a09a0d442173f4da769e/cucumber-core-2.0.1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: io.cucumber:cucumber-java:2.0.1">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/cucumber-java/2.0.1/1e7b39538eb5e92aca4301b005e80616c01f700d/cucumber-java-2.0.1.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/cucumber-java/2.0.1/9c2c73d3fbc1fd1530d7bade23ee7e9e2fa20548/cucumber-java-2.0.1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: io.cucumber:cucumber-junit:2.0.1">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/cucumber-junit/2.0.1/4a8001775978badab182ccf3c07853ed3db015ce/cucumber-junit-2.0.1.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/cucumber-junit/2.0.1/ecd749ad820fa404d986ab7e2ea9a38e574366e4/cucumber-junit-2.0.1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: io.cucumber:cucumber-jvm-deps:1.0.6">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/cucumber-jvm-deps/1.0.6/f099f06378ef35f9391fa2fbb41ac21d214fe737/cucumber-jvm-deps-1.0.6.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/cucumber-jvm-deps/1.0.6/ac679b48fcd0dc89a466257297954f38438a49ed/cucumber-jvm-deps-1.0.6-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: io.cucumber:gherkin-jvm-deps:1.0.4">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/gherkin-jvm-deps/1.0.4/ab5990bf8596b504ea6618fcf2e5192d4488440e/gherkin-jvm-deps-1.0.4.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/gherkin-jvm-deps/1.0.4/53fe4722681b15be1912fdcfb30d5c09221ebe90/gherkin-jvm-deps-1.0.4-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: io.cucumber:gherkin:4.1.3">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/gherkin/4.1.3/2e061b70509a85056e1d8bc325a9760e49c1dd86/gherkin-4.1.3.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/gherkin/4.1.3/1c78d26ecf2bd419b64ba596d5a7f719b4a970ee/gherkin-4.1.3-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: io.cucumber:tag-expressions:1.0.1">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/tag-expressions/1.0.1/b10ecf10a0ea1b3e0e55631c63799320efc1071d/tag-expressions-1.0.1.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/tag-expressions/1.0.1/a365031b5e0dce0457968731e1dc51adefb0fb88/tag-expressions-1.0.1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: io.vavr:vavr-match:0.9.1">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.vavr/vavr-match/0.9.1/fdeb6d7379ec9df724fe59121f1fadce46dd6d05/vavr-match-0.9.1.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.vavr/vavr-match/0.9.1/60ad305e4e393f0f82ce5afa049be5f1a758679a/vavr-match-0.9.1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: io.vavr:vavr:0.9.1">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.vavr/vavr/0.9.1/d6707c671271472b397724a0bfafad10239dd260/vavr-0.9.1.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.vavr/vavr/0.9.1/10a0594ac5a2ca7229a94f3a3eb33df96eedff7f/vavr-0.9.1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: joda-time:joda-time:2.9.9">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.9/f7b520c458572890807d143670c9b24f4de90897/joda-time-2.9.9.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.9/29a9fcf32288cd678b37b372974786f731b982d1/joda-time-2.9.9-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: junit:junit:4.12">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: net.lingala.zip4j:zip4j:1.3.2">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.lingala.zip4j/zip4j/1.3.2/4ba84e98ee017b74cb52f45962f929a221f3074c/zip4j-1.3.2.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.lingala.zip4j/zip4j/1.3.2/b2a62723195cf14964e7937f60da7c4daa0f61be/zip4j-1.3.2-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: net.masterthought:cucumber-reporting:3.11.0">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.masterthought/cucumber-reporting/3.11.0/53631826301a55b1fc0ffeeed23cd597aec6849c/cucumber-reporting-3.11.0.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.masterthought/cucumber-reporting/3.11.0/61817602c582f4c1c4c029c2523ee5b1ef9fcea2/cucumber-reporting-3.11.0-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: org.apache.commons:commons-lang3:3.6">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.6/9d28a6b23650e8a7e9063c04588ace6cf7012c17/commons-lang3-3.6.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.6/4765e418c9084c4e01233cb5f09bdd6b5f311ccc/commons-lang3-3.6-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: org.apache.logging.log4j:log4j-api:2.8.2">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.8.2/e590eeb783348ce8ddef205b82127f9084d82bf3/log4j-api-2.8.2.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.8.2/459702eacc545a5478627fe879cec6e004c00f3a/log4j-api-2.8.2-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: org.apache.logging.log4j:log4j-core:2.8.2">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.8.2/979fc0cf8460302e4ffbfe38c1b66a99450b0bb7/log4j-core-2.8.2.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.8.2/4693b08b8d9abe152417b9564bb7a68d82630180/log4j-core-2.8.2-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: org.apache.velocity:velocity:1.7">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.velocity/velocity/1.7/2ceb567b8f3f21118ecdec129fe1271dbc09aa7a/velocity-1.7.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.velocity/velocity/1.7/eb11eb70171ed64842b2e5216d5904e21ed162ac/velocity-1.7-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: org.codehaus.groovy:groovy-all:2.4.8">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-all/2.4.8/b2ddd0b4b2dd7598ccb769cc2eb37ff8d683e7c0/groovy-all-2.4.8.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-all/2.4.8/c0b188118d0bbee615ee601c048b14c7772d7e41/groovy-all-2.4.8-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: org.codehaus.groovy:groovy-all:2.4.9">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-all/2.4.9/3334e99a8baae12d6e014d444149e337ceb99a00/groovy-all-2.4.9.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-all/2.4.9/35c41a130264a801b171d8ad74b27f62b34bb6fa/groovy-all-2.4.9-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: org.codehaus.plexus:plexus-utils:3.0.24">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.0.24/b4ac9780b37cb1b736eae9fbcef27609b7c911ef/plexus-utils-3.0.24.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.0.24/325807d7e6393ae4f0f389277d7ef993e3aebdfe/plexus-utils-3.0.24-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: org.hamcrest:hamcrest-core:1.3">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: org.jsoup:jsoup:1.10.3">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.10.3/b842f960942503cf1abbcc8c173a7f2c19d43726/jsoup-1.10.3.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.10.3/89116c309401a6457942135ee47be41ea0eb1ab7/jsoup-1.10.3-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: org.objenesis:objenesis:2.1">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.1/87c0ea803b69252868d09308b4618f766f135a96/objenesis-2.1.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.1/611a57d836e2c320d59f9851d4ad587f3c8472e/objenesis-2.1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: org.picocontainer:picocontainer:2.15">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.picocontainer/picocontainer/2.15/1b05ebc330fb947f74fe98469f64f99e6bdd9892/picocontainer-2.15.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.picocontainer/picocontainer/2.15/5cd68f54f9d6cf19ac62c7281ac729401f167fc5/picocontainer-2.15-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: org.projectlombok:lombok:1.16.18">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.16.18/557d13dcb647038dc687390711ccb5c9b3ffbd60/lombok-1.16.18.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.16.18/d65e72edec3424e45335602fc1a4ff6e614f4553/lombok-1.16.18-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: org.slf4j:slf4j-api:1.7.25">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/962153db4a9ea71b79d047dfd1b2a0d80d8f4739/slf4j-api-1.7.25-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: org.slf4j:slf4j-simple:1.7.25">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-simple/1.7.25/8dacf9514f0c707cbbcdd6fd699e8940d42fb54e/slf4j-simple-1.7.25.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-simple/1.7.25/af3cd3ad1ea4b08b27b54f12529b4bf343bc5ca1/slf4j-simple-1.7.25-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: org.spockframework:spock-core:1.1-groovy-2.4">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.spockframework/spock-core/1.1-groovy-2.4/1c42014d4a18995d5d4aa10a4e060e88f60fdf78/spock-core-1.1-groovy-2.4.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.spockframework/spock-core/1.1-groovy-2.4/2b08ca54637337988a8da795c6dc3f66d2810ebb/spock-core-1.1-groovy-2.4-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: velocity-tools:velocity-tools:1.4">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/velocity-tools/velocity-tools/1.4/4e1f4d507030a00959f4c0c7fcc60b3565617d08/velocity-tools-1.4.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES />
-    </library>
   </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <UIState>
           <splitter-proportions>
-            <SplitterProportionsDataImpl />
+            <SplitterProportionsDataImpl/>
           </splitter-proportions>
-          <settings />
+          <settings/>
         </UIState>
       </state>
       <state key="Copyright.UI">
         <UIState>
           <splitter-proportions>
-            <SplitterProportionsDataImpl />
+            <SplitterProportionsDataImpl/>
           </splitter-proportions>
         </UIState>
       </state>
@@ -940,7 +545,7 @@
             <SplitterProportionsDataImpl>
               <option name="proportions">
                 <list>
-                  <option value="0.2" />
+                  <option value="0.2"/>
                 </list>
               </option>
             </SplitterProportionsDataImpl>
@@ -951,9 +556,9 @@
       <state key="ScopeChooserConfigurable.UI">
         <UIState>
           <splitter-proportions>
-            <SplitterProportionsDataImpl />
+            <SplitterProportionsDataImpl/>
           </splitter-proportions>
-          <settings />
+          <settings/>
         </UIState>
       </state>
     </states>

@@ -24,7 +24,6 @@ apply plugin: 'idea'
 apply plugin: 'com.github.jruby-gradle.base'
 apply plugin: 'org.ysb33r.vfs'
 apply plugin: 'org.asciidoctor.convert'
-apply plugin: 'com.bluepapa32.watch'
 apply plugin: 'uk.co.cacoethes.lazybones-templates'
 
 group = 'net.gellien.vavr'
@@ -115,9 +114,3 @@ asciidoctor {
   options template_dirs: [new File(adocRevealjsDir, 'templates/slim').absolutePath]
 }
 
-watch {
-  asciidoc {
-    files fileTree(dir: 'src/docs')
-    tasks 'asciidoctor'
-  }
-}

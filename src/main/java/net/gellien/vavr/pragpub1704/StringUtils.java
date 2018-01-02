@@ -1,8 +1,5 @@
 package net.gellien.vavr.pragpub1704;
 
-import io.vavr.collection.Stream;
-import java.io.File;
-
 public class StringUtils {
 
   public static String combinePathsImperative(String path1,
@@ -68,10 +65,4 @@ public class StringUtils {
             (java.io.File.pathSeparator));
   }
 
-  public static String combinePathWithBinVavr(java.util.List<String> paths){
-    return Stream.of(paths)
-        .filter(path -> path.contains("/bin"))
-        .map(path -> path.replaceAll("/bin", "/sbin"))
-        .intersperse(File.pathSeparator).
-  }
 }
