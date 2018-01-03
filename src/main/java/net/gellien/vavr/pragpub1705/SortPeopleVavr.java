@@ -21,12 +21,12 @@ public class SortPeopleVavr {
   }
 
   public static List<Person> printSortedByAgeUsingSortedWithComparing(List<Person> people) {
-    return io.vavr.collection.List.ofAll(people.stream())
+    return io.vavr.collection.List.ofAll(people)
         .sorted(comparing(Person::getAge)).toJavaList();
   }
 
   public static List<Person> printSortedByAgeAndNameUsingSortedWithComparing(List<Person> people) {
-    return io.vavr.collection.List.ofAll(people.stream())
+    return io.vavr.collection.List.ofAll(people)
         .sorted(comparing(Person::getAge).thenComparing(Person::getName))
         .toJavaList();
   }
