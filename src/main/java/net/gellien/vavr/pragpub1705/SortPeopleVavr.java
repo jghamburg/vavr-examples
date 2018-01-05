@@ -8,6 +8,9 @@ import java.util.List;
 
 public class SortPeopleVavr {
 
+  private SortPeopleVavr() {
+  }
+
   public static java.util.List<Person> createPeople() {
     return Arrays.asList(
         new Person("Sara", 12),

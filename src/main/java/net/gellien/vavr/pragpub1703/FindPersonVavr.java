@@ -3,7 +3,9 @@ package net.gellien.vavr.pragpub1703;
 import io.vavr.collection.Stream;
 import java.util.Arrays;
 import java.util.List;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class FindPersonVavr {
 
   public static List<Person> createPeople() {
@@ -22,12 +24,12 @@ public class FindPersonVavr {
   public static void main(String[] args) {
     List<Person> people = createPeople();
 
-    System.out.println(Stream.ofAll(people)
+    log.info(Stream.ofAll(people)
         .filter(person -> person.getAge() > 22).headOption()
         .map(person -> "The first adult in the list is "
             + person.getName())
         .getOrElse("No person found!")
     );
-    System.out.println("The End");
+    log.info("The End");
   }
 }

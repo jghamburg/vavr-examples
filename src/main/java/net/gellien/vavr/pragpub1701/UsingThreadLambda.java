@@ -7,9 +7,9 @@ public class UsingThreadLambda {
 
   public static void main(String[] args) {
     Thread thread = new Thread(() ->
-        System.out.println("Hello from another thread"));
+        log.info("Hello from another thread"));
     thread.start();
-    System.out.println("Hello from main");
+    log.info("Hello from main");
   }
 }
 

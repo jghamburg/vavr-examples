@@ -1,13 +1,13 @@
 package net.gellien.vavr.pragpub1701;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class StockPricesParallelStream {
 
   public static String getPriceFor(String ticker) {
@@ -22,15 +22,14 @@ public class StockPricesParallelStream {
       ExecutorService executorService =
           Executors.newFixedThreadPool(100);
 
-      List<Future<String>> pricesFutures = new ArrayList<>();
       // Java 8 parallel streams
       tickers.parallelStream().map(StockPrices::getPriceFor)
-          .forEachOrdered(System.out::println);
+          .forEachOrdered(log::info);
 
       executorService.shutdown();
       executorService.awaitTermination(100, TimeUnit.SECONDS);
     } catch (Exception ex) {
-      System.out.println(ex.getMessage());
+      log.info(ex.getMessage());
     }
   }
 }

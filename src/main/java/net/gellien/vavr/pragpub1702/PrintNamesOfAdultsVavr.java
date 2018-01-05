@@ -2,7 +2,9 @@ package net.gellien.vavr.pragpub1702;
 
 import java.util.Arrays;
 import java.util.List;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class PrintNamesOfAdultsVavr {
 
 
@@ -26,9 +28,9 @@ public class PrintNamesOfAdultsVavr {
         .map(Person::getName);
 
     basePeople.map(String::toUpperCase)
-        .forEach(System.out::println);
+        .forEach(log::info);
 
     basePeople.map(String::toLowerCase)
-        .forEach(System.out::println);
+        .forEach(log::info);
   }
 }

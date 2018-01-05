@@ -2,7 +2,9 @@ package net.gellien.vavr.pragpub1702;
 
 import java.util.Arrays;
 import java.util.List;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class PrintNamesOfAdults {
 
 
@@ -25,13 +27,13 @@ public class PrintNamesOfAdults {
     for (int i = 0; i < people.size(); i++) {
       Person person = people.get(i);
       if (person.getAge() > 17) {
-        System.out.println(person.getName().toUpperCase());
+        log.info(person.getName().toUpperCase());
       }
     }
-    System.out.println("_______________________");
+    log.info("_______________________");
     for(Person person : people){
       if (person.getAge() > 17){
-        System.out.println(person.getName().toUpperCase());
+        log.info(person.getName().toUpperCase());
       }
     }
   }

@@ -2,6 +2,9 @@ package net.gellien.vavr.pragpub1704;
 
 public class StringUtils {
 
+  public static final String BIN = "/bin";
+  public static final String SBIN = "/sbin";
+
   public static String combinePathsImperative(String path1,
       String path2, String path3) {
     final String separator = java.io.File.pathSeparator;
@@ -24,7 +27,7 @@ public class StringUtils {
       result.append(paths.get(i) + separator);
     }
 
-    if (paths.size() > 0) {
+    if (paths.isEmpty()) {
       result.append(paths.get(paths.size() - 1));
     }
 
@@ -43,15 +46,15 @@ public class StringUtils {
     for (int i = 0; i < paths.size() - 1; i++) {
       String path = paths.get(i);
 
-      if (path.contains("/bin")) {
-        result.append(path.replaceAll("/bin", "/sbin") + separator);
+      if (path.contains(BIN)) {
+        result.append(path.replaceAll(BIN, SBIN) + separator);
       }
     }
 
-    if (paths.size() > 0) {
+    if (paths.isEmpty()) {
       String path = paths.get(paths.size() - 1);
-      if (path.contains("/bin")) {
-        result.append(path.replaceAll("/bin", "/sbin"));
+      if (path.contains(BIN)) {
+        result.append(path.replaceAll(BIN, SBIN));
       }
     }
     return result.toString();
@@ -59,8 +62,8 @@ public class StringUtils {
 
   public static String combinePathWithBinJava8(java.util.List<String> paths) {
     return paths.stream()
-        .filter(path -> path.contains("/bin"))
-        .map(path -> path.replaceAll("/bin", "/sbin"))
+        .filter(path -> path.contains(BIN))
+        .map(path -> path.replaceAll(BIN, SBIN))
         .collect(java.util.stream.Collectors.joining
             (java.io.File.pathSeparator));
   }

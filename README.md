@@ -1,22 +1,16 @@
-Java Application project template
+Java8 - VAVR Examples of functionla Style Programming
 ------------------------------------
 
-You have just created a basic Java application. There is a standard project
-structure for source code and tests.
+The basic examples were taken from the article series "Refactoring to Functional Style" by Venkat 
+Subramaniam, PragPub 2017, vol 01..12.
 
-In this project you get:
+The idea is to go from imperative style to functional. The funtional solutions should be represented
+by plain Java8 and by using the library vavr (aka javaslang).
 
-* A Gradle build file
-* A standard project structure:
+# References  
 
-    <proj>
-      |
-      +- src
-          |
-          +- main
-          |     |
-          |     +- java
-          |
-          +- test
-          |   |
-          |   +- java
+* PragPub Magazine [http://theprosegarden.com/](http://theprosegarden.com/)  
+* VAVR Project Home [https://github.com/vavr-io/vavr-docs](https://github.com/vavr-io/vavr-docs)
+* VAVR Presentation by David Schmitz, at Java User Group Hamburg 19. Oct 2017 [Dropbox-Link](http://bit.ly/2zmYaiR)
+* [Functional Programming in Java](https://pragprog.com/book/vsjava8/functional-programming-in-java) by Venkat Subramaniam, Pragmatic Programmers 2014
+

@@ -10,6 +10,9 @@ import java.util.stream.Collectors;
 
 public class SortPeople {
 
+  private SortPeople() {
+  }
+
   public static List<Person> createPeople() {
     return Arrays.asList(
         new Person("Sara", 12),

@@ -1,7 +1,9 @@
 package net.gellien.vavr.pragpub1703;
 
 import java.util.*;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class FindPerson {
 
   public static List<Person> createPeople() {
@@ -28,10 +30,10 @@ public class FindPerson {
 
     if (firstAdult != null) {
 
-      System.out.println("The first adult in the list is "
+      log.info("The first adult in the list is "
           + firstAdult.getName());
     } else {
-      System.out.println("No adults in the given list");
+      log.info("No adults in the given list");
     }
   }
 
@@ -39,8 +41,8 @@ public class FindPerson {
     List<Person> people = createPeople();
 
     findFirstAdult(people);
-    System.out.println("The functional style:");
-    System.out.println(people.stream()
+    log.info("The functional style:");
+    log.info(people.stream()
     .filter(person -> person.getAge() > 17)
     .findFirst()
     .map(person -> "The first adult in the list is "

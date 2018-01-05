@@ -7,7 +7,9 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class StockPricesStream {
 
   public static String getPriceFor(String ticker) {
@@ -28,18 +30,14 @@ public class StockPricesStream {
         pricesFutures.add(executorService.submit(() -> getPriceFor(ticker)));
       }
       // Java 8 streams
-      /*
-      tickers.stream().map(ticker -> executorService.submit(()->getPriceFor(ticker)))
-          .collect(toList());
-      */
       for (Future<String> priceFuture : pricesFutures) {
-        System.out.println(priceFuture.get());
+        log.info(priceFuture.get());
       }
 
       executorService.shutdown();
       executorService.awaitTermination(100, TimeUnit.SECONDS);
     } catch (Exception ex) {
-      System.out.println(ex.getMessage());
+      log.info(ex.getMessage());
     }
   }
 }

@@ -2,7 +2,9 @@ package net.gellien.vavr.pragpub1701;
 
 import java.util.*;
 import java.util.concurrent.*;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class StockPrices {
 
   public static String getPriceFor(String ticker) {
@@ -28,13 +30,13 @@ public class StockPrices {
       }
 
       for (Future<String> priceFuture : pricesFutures) {
-        System.out.println(priceFuture.get());
+        log.info(priceFuture.get());
       }
 
       executorService.shutdown();
       executorService.awaitTermination(100, TimeUnit.SECONDS);
     } catch (Exception ex) {
-      System.out.println(ex.getMessage());
+      log.info(ex.getMessage());
     }
   }
 }

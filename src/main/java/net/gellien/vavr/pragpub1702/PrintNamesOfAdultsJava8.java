@@ -3,7 +3,9 @@ package net.gellien.vavr.pragpub1702;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class PrintNamesOfAdultsJava8 {
 
 
@@ -27,10 +29,10 @@ public class PrintNamesOfAdultsJava8 {
         .map(Person::getName);
     basePeople
         .map(String::toUpperCase)
-        .forEach(System.out::println);
+        .forEach(log::info);
 
     basePeople
         .map(String::toLowerCase)
-        .forEach(System.out::println);
+        .forEach(log::info);
   }
 }

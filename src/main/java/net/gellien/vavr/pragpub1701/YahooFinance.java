@@ -1,28 +1,31 @@
 package net.gellien.vavr.pragpub1701;
 
-import java.net.URL;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
 import static java.util.stream.Collectors.toList;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class YahooFinance {
+
+  private YahooFinance() {
+  }
 
   public static double getPrice(final String ticker) {
     try {
       final URL url =
-          new URL("https://www.quandl.com/api/v1/datasets/WIKI/AAPL"
+          new URL("https://www.quandl.com/api/v1/datasets/WIKI/" + ticker
               + ".csv?column=4&sort_order=asc&collapse=quarterly&trim_start=2012-01-01&trim_end=2012-02-28");
-      final BufferedReader reader =
-          new BufferedReader(new InputStreamReader(url.openStream()));
+      String[] dataItems;
+      try (BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()))) {
+        dataItems = reader.lines().collect(toList()).get(1).split(",");
+      }
 
-      final String[] dataItems =
-          reader.lines().collect(toList()).get(1).split(",");
-      double price =
-          Double.parseDouble(dataItems[dataItems.length - 1]);
-      return price;
-    } catch (Exception ex) {
+      return Double.parseDouble(dataItems[dataItems.length - 1]);
+    } catch (IOException ex) {
       throw new RuntimeException(ex);
     }
   }
